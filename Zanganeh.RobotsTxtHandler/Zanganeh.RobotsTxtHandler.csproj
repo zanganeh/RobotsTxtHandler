@@ -178,7 +178,7 @@
     </None>
     <None Include="Views\Admin\Index.cshtml" />
     <None Include="Views\web.config" />
-    <None Include="Zanganeh.RobotsTxtHandler.nuspec">
+    <None Include="_Zanganeh.RobotsTxtHandler._nuspec">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
