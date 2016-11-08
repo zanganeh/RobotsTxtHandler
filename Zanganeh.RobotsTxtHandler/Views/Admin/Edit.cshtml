@@ -4,7 +4,7 @@
 @using (Html.BeginForm())
 {
     @Html.DropDownList("SelectedSiteId", Model.Sites)
-    @Html.TextAreaFor(a => a.RobotText)
+    @Html.TextAreaFor(a => a.RobotText, new { @rows = 20 })
 
     <input type="submit" value="Submit" />
 }
