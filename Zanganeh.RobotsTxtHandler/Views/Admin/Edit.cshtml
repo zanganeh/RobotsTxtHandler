@@ -1,0 +1,10 @@
+﻿@model EditViewModel
+@{  Layout = "Layout.cshtml"; }
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("SelectedSiteId", Model.Sites)
+    @Html.TextAreaFor(a => a.RobotText)
+
+    <input type="submit" value="Submit" />
+}

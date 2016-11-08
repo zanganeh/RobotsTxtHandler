@@ -1,21 +1,27 @@
 ﻿@model AdminViewModel
+@{  Layout = "Layout.cshtml"; }
 
-@if (Model.RobotTxts != null && Model.RobotTxts.Any())
+@if (Model.AvailableRobotTxts != null && Model.AvailableRobotTxts.Any())
 {
-    <table>
-        @foreach (var robotTxt in Model.RobotTxts)
+    <div>
+        @foreach (var robotTxt in Model.AvailableRobotTxts)
         {
-            <tr>
-                <td>@robotTxt.SiteId</td>
-            </tr>
+            <div>
+                <span>@robotTxt.Name</span>
+                <span><a href="@Url.Content(string.Format("{0}/{1}/{2}/{3}", Const.ModuleUrlBase,Const.ModuleAdminController,Const.ModuleAdminEditAction, robotTxt.Id))">Edit</a></span>
+                <span><a href="@Url.Content(string.Format("{0}/{1}/{2}/{3}", Const.ModuleUrlBase, Const.ModuleAdminController, Const.ModuleAdminDeleteAction, robotTxt.Id))">Delete</a></span>
+            </div>
         }
-    </table>
+    </div>
 }
 
-@using (Html.BeginForm())
+@if (Model.Sites != null && Model.Sites.Any())
 {
-    @Html.DropDownList("SelectedSite", Model.Sites)
-    @Html.TextAreaFor(a => a.RobotText)
+    using (Html.BeginForm())
+    {
+        @Html.DropDownList("SelectedSite", Model.Sites)
+        @Html.TextAreaFor(a => a.RobotText, new { @rows = 20 })
 
-    <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
+    }
 }

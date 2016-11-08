@@ -15,5 +15,7 @@
     <file src="module.config" target="content\modules\Zanganeh.RobotsTxtHandler\module.config" />
     <file src="Views\web.config" target="content\modules\Zanganeh.RobotsTxtHandler\Views\web.config" />
     <file src="Views\Admin\Index.cshtml" target="content\modules\Zanganeh.RobotsTxtHandler\Views\Admin\Index.cshtml" />
+    <file src="Views\Admin\Edit.cshtml" target="content\modules\Zanganeh.RobotsTxtHandler\Views\Admin\Edit.cshtml" />
+    <file src="Views\Admin\Layout.cshtml" target="content\modules\Zanganeh.RobotsTxtHandler\Views\Admin\Layout.cshtml" />
   </files>
 </package>
