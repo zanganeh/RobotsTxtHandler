@@ -10,7 +10,7 @@ if not "%PackageVersion%" == "" (
 )
 
 REM Build
-"%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" Zanganeh.RobotsTxtHandler.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
+"%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" Zanganeh.RobotsTxtHandler.sln /p:Configuration="%config%" /p:Platform="Any CPU" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
 
 REM Package
 mkdir Build
