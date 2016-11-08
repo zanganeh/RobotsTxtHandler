@@ -1,13 +1,19 @@
 <?xml version="1.0"?>
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-		<id>Zanganeh.RobotsTxtHandler</id>
-		<version>1.0</version>
-		<authors>Aria Zanganeh</authors>
-		<owners>Aria Zanganeh</owners>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
 		<projectUrl>https://github.com/zanganeh/RobotsTxtHandler</projectUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>robots.text implementation for EPiServer</description>
 		<tags>Robots EPiServer</tags>
 	</metadata>
+  <files>
+    <file src="module.config" target="content\modules\Zanganeh.RobotsTxtHandler\module.config" />
+    <file src="Views\web.config" target="content\modules\Zanganeh.RobotsTxtHandler\View\web.config" />
+    <file src="Views\Admin\Index.cshtml" target="content\modules\Zanganeh.RobotsTxtHandler\Views\Admin\Index.cshtml" />
+  </files>
 </package>

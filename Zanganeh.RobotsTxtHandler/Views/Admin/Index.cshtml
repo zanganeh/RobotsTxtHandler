@@ -1,0 +1,23 @@
+﻿@inherits System.Web.Mvc.WebViewPage<Zanganeh.RobotsTxtHandler.ViewModel.AdminViewModel>
+@using System.Web.Mvc.Html
+@using System.Linq
+
+@if (Model.RobotTxts != null && Model.RobotTxts.Any())
+{
+    <table>
+        @foreach (var robotTxt in Model.RobotTxts)
+        {
+            <tr>
+                <td>@robotTxt.SiteId</td>
+            </tr>
+        }
+    </table>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("SelectedSite", Model.Sites)
+    @Html.TextAreaFor(a => a.RobotText)
+
+    <input type="submit" value="Submit" />
+}
