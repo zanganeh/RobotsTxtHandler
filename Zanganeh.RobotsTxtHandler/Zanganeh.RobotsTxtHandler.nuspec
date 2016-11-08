@@ -13,7 +13,7 @@
 	</metadata>
   <files>
     <file src="module.config" target="content\modules\Zanganeh.RobotsTxtHandler\module.config" />
-    <file src="Views\web.config" target="content\modules\Zanganeh.RobotsTxtHandler\View\web.config" />
+    <file src="Views\web.config" target="content\modules\Zanganeh.RobotsTxtHandler\Views\web.config" />
     <file src="Views\Admin\Index.cshtml" target="content\modules\Zanganeh.RobotsTxtHandler\Views\Admin\Index.cshtml" />
   </files>
 </package>
