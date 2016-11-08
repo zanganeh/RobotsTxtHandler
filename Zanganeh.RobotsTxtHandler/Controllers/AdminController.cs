@@ -14,7 +14,7 @@ namespace Zanganeh.RobotsTxtHandler.Controllers
         Area = EPiServer.PlugIn.PlugInArea.AdminMenu,
         DisplayName = "Robots.txt Handler",
         Description = "Robots.txt Handler",
-        Url = "~/EPiServer/RobotsTxtHandler/Admin/Index",
+        Url = "~/modules/Zanganeh.RobotsTxtHandler/Admin/Index",
         RequiredAccess = AccessLevel.Administer)]
 
     public class AdminController : Controller
